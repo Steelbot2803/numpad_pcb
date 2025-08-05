@@ -54,7 +54,7 @@ _📷 Add 3D renders or board previews here_
 
 ## 📜 License
 
-This repository is shared for learning and personal use under the **MIT License**.  
+This repository is shared for learning and personal use under the [**MIT License**](LICENSE).  
 Please respect the original licenses of any submodules and give credit when reusing!
 
 ---
