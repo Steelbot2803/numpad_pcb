@@ -1,65 +1,118 @@
-# 🧮 Custom Mechanical Numpad – PCB & Enclosure Design
+# 🧮 Custom Mechanical Numpad (PCB + Enclosure)
 
-This repository contains the full design files for a **custom mechanical numpad** featuring a rotary encoder (knob) and linear potentiometer (slider). Built purely as a **passion project**, this numpad was never intended for mass production—just a sandbox to challenge myself and learn more about electronics, PCB design, and enclosure prototyping.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Project Status](https://img.shields.io/badge/status-prototype-orange)
+![Made with KiCad](https://img.shields.io/badge/Made%20with-KiCad%207-314CB6)
+![3D CAD](https://img.shields.io/badge/3D%20CAD-Fusion%20360-ff6b00)
 
----
+A compact, custom **mechanical numpad** design featuring:
+- a **rotary encoder** (knob input),
+- a **linear potentiometer** (slider input), and
+- a fully custom **KiCad PCB + enclosure workflow**.
 
-## 🛠️ Features
-
-- ✅ **Fully custom PCB** designed in **KiCad 7**
-- 🖱️ Supports **Cherry MX-style switches** (hot-swappable footprints)
-- 🎛️ Integrated **rotary encoder knob**
-- 🎚️ Integrated **slider / linear potentiometer**
-- 📦 Enclosure and parts modeled in **Fusion 360**
-- ⚡ Prototype-only – not manufactured (yet!)
-
----
-
-## 🧩 Tools & Software Used
-
-- **KiCad 7** – Schematic & PCB layout
-- **Fusion 360** – 3D modeling for the shell and key layout
-- **FlatCAM** (optional, for CNC PCB milling)
-- **FreeCAD** (optional, for STEP file cleanup)
+This project was built as a personal learning sandbox for keyboard electronics, PCB design, and mechanical packaging—not as a production-ready product.
 
 ---
 
-## 🧷 Included Submodules & Credits
+## ✨ Highlights
 
-This project includes multiple community libraries and resources via Git submodules:
-
-- [`MX_V2`](https://github.com/ai03-2725/MX_Alps_Hybrid) – Cherry MX switch footprints by [ai03](https://github.com/ai03-2725)
-- [`Type-C-pretty`](https://github.com/philb/Type-C.pretty) – USB Type-C footprint by [philb](https://github.com/philb)
-- [`kicad-lib`](https://github.com/kicad/kicad-footprints) – Official KiCad footprint libraries
-- [`kiswitch`](https://github.com/kicad/kicad-symbols) – Official KiCad switch symbol library
-- [`random-keyboard-parts.pretty`](https://github.com/digistump/random-keyboard-parts.pretty) – Misc. keyboard footprints
-- Other KiCad files like `fp-lib-table` and `sym-lib-table` link to these submodules for seamless integration.
-
-All credit goes to the respective authors and maintainers of these awesome open-source libraries!
+- ✅ Custom schematic + PCB layout in **KiCad 7**
+- ✅ MX-style mechanical switch support
+- ✅ Rotary encoder + slider integration
+- ✅ 3D enclosure model in **Fusion 360**
+- ✅ Included CAD export (`.stp`) for mechanical iteration
+- ⚠️ Prototype concept (not manufactured yet)
 
 ---
 
-## 📸 Screenshots
+## 📁 Repository Structure
 
-_📷 Add 3D renders or board previews here_
+```text
+.
+├── README.md
+├── LICENSE
+├── numpad.kicad_sch        # Main schematic
+├── numpad.kicad_pcb        # Main PCB layout
+├── numpad.kicad_pro        # KiCad project file
+├── matrix.kicad_sch        # Matrix / auxiliary schematic
+├── fp-lib-table            # KiCad footprint library table
+├── sym-lib-table           # KiCad symbol library table
+├── cad/
+│   └── Numpad.stp          # 3D enclosure/assembly model
+└── numpad-backups/         # KiCad backup archives
+```
 
 ---
 
-## 👨‍🔧 Author
+## 🧰 Toolchain
 
-**Siddharth Kumar Ananda Kumar**  
-🔗 [Portfolio](https://linkedin.com/in/sidkak) | 💻 [GitHub](https://github.com/Steelbot2803)
+- **[KiCad 7](https://www.kicad.org/)** — schematic capture + PCB design
+- **[Fusion 360](https://www.autodesk.com/products/fusion-360/)** — enclosure and mechanical modeling
+- **[FlatCAM](http://flatcam.org/)** *(optional)* — CAM prep for PCB milling workflows
+- **[FreeCAD](https://www.freecad.org/)** *(optional)* — STEP validation/cleanup
+
+---
+
+## 🚀 Getting Started
+
+### 1) Clone the repository
+
+```bash
+git clone <your-fork-or-repo-url>
+cd numpad_pcb
+```
+
+### 2) Open in KiCad
+
+- Open `numpad.kicad_pro` in KiCad 7.
+- Review linked symbol/footprint libraries from:
+  - `sym-lib-table`
+  - `fp-lib-table`
+
+### 3) Explore the board + enclosure
+
+- PCB layout: `numpad.kicad_pcb`
+- 3D CAD model: `cad/Numpad.stp`
+
+---
+
+## 🔌 Libraries & Credits
+
+This project references community keyboard/E-CAD assets.
+
+- **MX switch footprints** by [ai03-2725](https://github.com/ai03-2725)
+- **USB Type-C footprint** by [philb](https://github.com/philb)
+- **Official KiCad symbol/footprint libraries** by the [KiCad project](https://github.com/KiCad)
+- **Keyboard footprint resources** from [digistump/random-keyboard-parts.pretty](https://github.com/digistump/random-keyboard-parts.pretty)
+
+If you reuse this design, please retain attribution for upstream libraries and respect their licenses.
+
+---
+
+## 📸 Preview
+
+![Custom numpad render](assets/numpad-render.svg)
+
+_Render preview of the custom numpad enclosure + PCB assembly._
+
+---
+
+## 👤 Author
+
+**Siddharth Kumar Ananda Kumar**
+
+- GitHub: [@Steelbot2803](https://github.com/Steelbot2803)
+- Portfolio: [sid2028-portfolio.netlify.app](https://sid2028-portfolio.netlify.app/)
+- LinkedIn: [linkedin.com/in/sidkak](https://linkedin.com/in/sidkak)
 
 ---
 
 ## 📜 License
 
-This repository is shared for learning and personal use under the [**MIT License**](LICENSE).  
-Please respect the original licenses of any submodules and give credit when reusing!
+Distributed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
 ---
 
-## 🙌 Disclaimer
+## ⚠️ Disclaimer
 
-This is a **prototype-only** project that was never physically manufactured.  
-Use at your own risk if modifying or fabricating. Feedback and forks are welcome!
+This is a prototype and learning project. The design has not been validated for production manufacturing, compliance, or long-term reliability.
