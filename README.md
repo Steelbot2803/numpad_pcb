@@ -91,7 +91,7 @@ If you reuse this design, please retain attribution for upstream libraries and r
 
 ## 📸 Preview
 
-![Custom numpad render](assets/numpad-render.svg)
+![Custom numpad](assets/assembly.png)
 
 _Render preview of the custom numpad enclosure + PCB assembly._
 
